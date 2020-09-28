@@ -1,0 +1,156 @@
+<html>  
+<head>  
+<link rel="stylesheet" href="css/index.css">
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;
+  background-image: url("img/steelblue.jpg");
+  background-repeat:inherit;
+}  
+.container1 {  
+    padding: 40px;
+    background-color: white;
+    opacity: 0.6; 
+    margin-top: 40px; 
+    margin-right:370px;
+    margin-left: 40px;
+    color: black;
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 50%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: lightblue;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color:blue;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 70%;  
+  opacity: 0.9;  }
+  *{
+    box-sizing: border-box;
+}
+</style>  
+</head>  
+<body>  
+    <header>  
+        <div class="container">
+            <div class="row">
+                <a href="index.html" class="logo"><img src="img/logo1.jpg" alt="" style="width: 150px;height: 90px;padding-left: 60px;padding-top:9px ;padding-bottom: 2px;margin-top: 10px;"></a>
+                <a href="index.html" class="logo"><img src="img/doc.png" alt="" style="width: 190px;height: 70px; padding-top: 2px; padding-bottom: 2px;padding-left: 10px; margin-top: 10px;"></a>
+                <div class="menu">
+                   <ul>
+                      <li class="current" ><a href="index.html">Home</a></li>
+                      <li class="current" ><a href="#r">Join Us</a></li>
+                      <li class="current" ><a href="#footer">Contact Us</a></li>
+                    </ul>
+                </div>
+                  
+                  <div class="clear"></div>
+              </div>
+           </div>         
+    </header>  
+   
+<form name="myform" onsubmit="return(validate());" action="/myaction" method="POST">  
+  <div class="container1">  
+    <h1> Register now</h1>  
+  <hr>  
+  <label><b> Firstname </b></label>&nbsp;&nbsp;   
+  <input type="text" name="firstname" placeholder= "Enter your Firstname" size="15" required /> <br>   
+  <label><b>Lastname </b> </label>  &nbsp;&nbsp;    
+  <input type="text" name="lastname" placeholder="Enter your Lastname" size="15"required /><br>
+
+ <label for="email"><b>Email</b></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="text" placeholder="Enter your Email Address" name="email"  required>  
+  <br>
+    <label for="psw"><b>Password</b></label>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="password" placeholder="Enter your Password" name="pass1" required>  
+  <br>
+    <label for="psw-repeat"><b>Re-type Password</b></label>  &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="password" placeholder="Retype Password" name="pass2" required><br><br>
+    <input type="checkbox" required>&nbsp;&nbsp;&nbsp;&nbsp;I have read the terms and conditions <br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  <a href="">Already Registered? Login</a><br> 
+    <br><button type="submit" class="registerbtn">Register</button>   
+</div>
+</form>  
+<br><br><br><br><br>
+<footer id="footer">
+    <div class=" foot-container">
+      <h1 style="text-align: center;padding-top: 30px;">CONTACT DETAILS</h1>
+      <ul class="footer-list">
+        <li>
+          <img src="img/gps.png" alt="" style="height: 40px;width: 40px;"><a>20/1,Radha Nagar,Chrompet,Chennai-44</a>
+        </li>
+            <li>
+              <img src="img/telephone.png" alt="" style="height: 40px;width: 40px;">
+              <a>6379414902</a><br><a>6385435768</a><br><a href="">6379960389</a>
+            </li>
+            <li>
+              <img src="img/gmail.png" alt="" style="height: 40px;width: 40px;">
+              <a href="#">iamnithishguhan@gmail.com</a><br>
+              <a href="#">sabaribalag3@gmail.com</a><br>
+              <a href="#">srinath652001@gmail.com</a>
+            </li>
+          
+      </ul>
+     
+             <div class="foot-logo">
+            <ul class="symbols">
+              <li>
+                <a href="" target="_blank"><img alt="facebook" src="img/facebook.png" style="height: 40px;width: 40px;"></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img alt="twitter" src="img/twitter.png" style="height: 40px;width: 40px;"></a>
+              </li>
+              <li>
+                <a href="" target="_blank"><img alt="youtube" src="img/instagram.png" style="height: 40px;width: 40px;"></a>
+              </li>
+
+            </ul>
+          </div>
+    
+        <div class="footer-last">
+          <a href="" class="footerlast" style="text-decoration: none;">AboutUs</a><a href="" class="footerlast" style="text-decoration: none;">Terms and Conditions</a><a href="" class="footerlast" style="text-decoration: none;">Privacy Policy</a>
+          <p style="color: white;">Copyright ©2020 AppareilsDoc.Co</p>
+          <br><br>
+          <p></p>
+          <p></p>
+          </div>
+
+  <script>
+    function validate()
+    {
+      var email=document.myform.email.value;
+      var pass1=document.myform.pass1.value;
+      var pass2=document.myform.pass2.value;
+      
+      if(pass1!=pass2)
+      {
+         alert("Passwords Doesnt match");
+         pass1.focus();
+         return false;
+      }  
+
+    }
+    </script>  
+</body>
+
+</html>
